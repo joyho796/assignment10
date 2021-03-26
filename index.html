@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Web API Exploration</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+      <link href="style.css" rel="stylesheet">
+   </head>
+
+   <body>
+      <h1>Web API Exploration</h1>
+      <div>
+         <h2>Email Validation API</h2>
+         <p>I selected a email validation API from Abstract APIs. The API provides validation for email addresses. It is also able to provide autocorrect for common typos and common domains. I suspect it is simply a parsing tool as through my own testing, any address @gmail.com will show to be valid, and any .edu domain will show to be valid as well. Therefore it is not able to eliminate all bad email addresses, but is still able to catch a good amount of errors. </p>
+         <br>
+         <p>One instance where it would be helpful would be if someone were entering their address to recieve more information. If they user typed their email wrong and didn't notice, they would be confused and frustrated as to why they didn't recieve an email.</p>
+         <br>
+         <p>Another example of where this would be useful is if the user bought something online, and entered an invalid email. If there was something wrong with the order and the seller needed to contact the buyer, it would be bad if the seller could not reach the buyer.</p>
+         <br>
+         <p>This API is available on <a href="https://app.abstractapi.com/">https://app.abstractapi.com/</a>. I found it through the provided public API listings on github. The API is fetched using a GET request and providing an email through the query in the URL.</p>
+         <br>
+         <p style="width:80%">Enter an email address: <input type="text" id="email">&nbsp<button>Check Validity</button></p>
+         <br>
+         <p id="valid"></p>
+         <br>
+         <p id="autocorrect"></p>
+
+
+      </div>
+   </body>
+
+</html>
